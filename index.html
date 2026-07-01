@@ -1,212 +1,144 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Designing.om | اطلب تصميمك</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designing.om</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <!-- Header -->
-
-    <header>
-
-        <div class="logo">
-
-            Designing<span>.om</span>
-
-        </div>
-
-        <nav>
-
-            <a href="#home">الرئيسية</a>
-
-            <a href="#services">الخدمات</a>
-
-            <a href="#order">اطلب تصميم</a>
-
-            <a href="#contact">التواصل</a>
-
-        </nav>
-
-    </header>
-
-
-
-
-
-    <!-- Hero -->
-
-    <section class="hero" id="home">
-
-        <h1>نحو تصميم يليق بمناسبتكم</h1>
-
-        <p>
-
-            نقدم تصاميم احترافية للدعوات الإلكترونية، الزفات، الشعارات، البوستات،
-
-            الهويات البصرية وجميع الأعمال الإبداعية.
-
-        </p>
-
-        <a href="#order" class="btn">
-
-            اطلب تصميمك الآن
-
-        </a>
-
-    </section>
-
-
-
-
-
-    <!-- Services -->
-
-    <section class="services" id="services">
-
-        <h2>خدماتنا</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>دعوات زفاف</h3>
-                <p>دعوات إلكترونية راقية وحديثة.</p>
-            </div>
-
-            <div class="card">
-                <h3>تصميم شعارات</h3>
-                <p>هوية احترافية لنشاطك التجاري.</p>
-            </div>
-
-            <div class="card">
-                <h3>بوستات سوشال ميديا</h3>
-                <p>تصاميم احترافية للإنستقرام وسناب.</p>
-            </div>
-
-            <div class="card">
-                <h3>تصاميم خاصة</h3>
-                <p>أي تصميم حسب طلب العميل.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- Order Form -->
-
-    <section class="order" id="order">
-
-        <h2>نموذج طلب تصميم</h2>
-
-        <form id="orderForm">
-
-            <input
-                type="text"
-                id="name"
-                placeholder="الاسم الكامل"
-                required>
-
-            <input
-                type="tel"
-                id="phone"
-                placeholder="رقم الهاتف أو الواتساب"
-                required>
-
-            <select id="designType" required>
-
-                <option value="">اختر نوع التصميم</option>
-
-                <option>دعوة زفاف</option>
-
-                <option>دعوة تخرج</option>
-
-                <option>شعار</option>
-
-                <option>هوية بصرية</option>
-
-                <option>بوست إنستقرام</option>
-
-                <option>بطاقة شكر</option>
-
-                <option>تصميم آخر</option>
-
-            </select>
-
-            <input
-                type="text"
-                id="size"
-                placeholder="المقاس المطلوب (اختياري)">
-
-            <input
-                type="text"
-                id="colors"
-                placeholder="الألوان المفضلة">
-
-            <input
-                type="date"
-                id="delivery">
-
-            <textarea
-                id="description"
-                rows="7"
-                placeholder="اكتب وصف التصميم بالتفصيل..."
-                required></textarea>
-
-            <input
-                type="url"
-                id="reference"
-                placeholder="رابط التصميم المرجعي (اختياري)">
-
-            <button type="submit">
-
-                إرسال الطلب
-
-            </button>
-
-        </form>
-
-    </section>
-
-
-
-
-
-    <!-- Contact -->
-
-    <footer id="contact">
-
-        <h2>Designing.om</h2>
-
-        <p>
-
-            جميع الحقوق محفوظة © 2026
-
-        </p>
-
-    </footer>
-
-
-
-
-
-    <script src="script.js"></script>
-
+<header>
+  <div class="logo">Designing<span>.om</span></div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#portfolio">الأعمال</a>
+    <a href="#pricing">الباقات</a>
+    <a href="#order">طلب تصميم</a>
+    <a href="#tracking">تتبع</a>
+    <a href="#dashboard">لوحة التحكم</a>
+  </nav>
+  <button id="darkBtn">🌙</button>
+</header>
+
+<section class="hero" id="home">
+  <h1>صمّم مناسبتك بأسلوب فاخر</h1>
+  <p>دعوات، زفات، شعارات، بوستات، هويات بصرية وتصاميم حسب الطلب.</p>
+  <a href="#order" class="main-btn">اطلب تصميمك الآن</a>
+</section>
+
+<section id="portfolio">
+  <h2>معرض الأعمال</h2>
+  <div class="grid">
+    <div class="work">دعوة زفاف</div>
+    <div class="work">دعوة تخرج</div>
+    <div class="work">شعار</div>
+    <div class="work">بوست إنستقرام</div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>أسعار الباقات</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Basic</h3>
+      <p>تصميم بسيط</p>
+      <h4>5 ر.ع</h4>
+    </div>
+    <div class="card featured">
+      <h3>Premium</h3>
+      <p>تصميم احترافي مع تعديلين</p>
+      <h4>10 ر.ع</h4>
+    </div>
+    <div class="card">
+      <h3>VIP</h3>
+      <p>تصميم فاخر + أولوية</p>
+      <h4>20 ر.ع</h4>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <h2>نموذج طلب تصميم</h2>
+
+  <form id="orderForm">
+    <input id="clientName" type="text" placeholder="اسم العميل" required />
+    <input id="clientPhone" type="tel" placeholder="رقم الواتساب" required />
+    <input id="clientEmail" type="email" placeholder="البريد الإلكتروني" />
+
+    <select id="designType" required>
+      <option value="">اختر نوع التصميم</option>
+      <option>دعوة زفاف</option>
+      <option>دعوة تخرج</option>
+      <option>شعار</option>
+      <option>هوية بصرية</option>
+      <option>بوست إنستقرام</option>
+      <option>تصميم آخر</option>
+    </select>
+
+    <select id="packageType" required>
+      <option value="">اختر الباقة</option>
+      <option value="Basic - 5 ر.ع">Basic - 5 ر.ع</option>
+      <option value="Premium - 10 ر.ع">Premium - 10 ر.ع</option>
+      <option value="VIP - 20 ر.ع">VIP - 20 ر.ع</option>
+    </select>
+
+    <input id="colors" type="text" placeholder="الألوان المطلوبة" />
+    <input id="size" type="text" placeholder="المقاس المطلوب" />
+    <input id="delivery" type="date" />
+
+    <textarea id="description" placeholder="وصف التصميم بالتفصيل" required></textarea>
+
+    <label class="file-label">
+      📎 رفع ملف أو صورة
+      <input id="fileUpload" type="file" />
+    </label>
+
+    <select id="paymentMethod" required>
+      <option value="">اختر طريقة الدفع</option>
+      <option>تحويل بنكي</option>
+      <option>Thawani Pay</option>
+      <option>PayPal</option>
+      <option>الدفع لاحقًا</option>
+    </select>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+
+<section id="tracking">
+  <h2>تتبع الطلب</h2>
+  <div class="tracking-box">
+    <input id="trackInput" type="text" placeholder="أدخل رقم الطلب" />
+    <button onclick="trackOrder()">تتبع</button>
+    <p id="trackResult"></p>
+  </div>
+</section>
+
+<section id="rating">
+  <h2>تقييم الخدمة</h2>
+  <div class="rating">
+    <button onclick="rate(1)">⭐</button>
+    <button onclick="rate(2)">⭐⭐</button>
+    <button onclick="rate(3)">⭐⭐⭐</button>
+    <button onclick="rate(4)">⭐⭐⭐⭐</button>
+    <button onclick="rate(5)">⭐⭐⭐⭐⭐</button>
+  </div>
+  <p id="ratingResult"></p>
+</section>
+
+<section id="dashboard">
+  <h2>لوحة التحكم</h2>
+  <button onclick="loadOrders()">عرض الطلبات</button>
+  <button onclick="clearOrders()" class="danger">حذف كل الطلبات</button>
+  <div id="ordersList"></div>
+</section>
+
+<footer>
+  <h3>Designing.om</h3>
+  <p>جميع الحقوق محفوظة © 2026</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
